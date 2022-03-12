@@ -1,0 +1,32 @@
+﻿FormatVersion: 7
+Name: "FeatherFollow 3"
+Script: "FeatherFollow"
+Config:
+  StartTime:
+    Type: "System.Int32"
+    Value: "109346"
+  EndTime:
+    Type: "System.Int32"
+    Value: "131672"
+  BeatDivisor:
+    Type: "System.Int32"
+    Value: "8"
+  FadeDuration:
+    Type: "System.Int32"
+    Value: "200"
+  SpritePath:
+    Type: "System.String"
+    Value: "sb/glow_circle.png"
+  SpriteScale:
+    Type: "System.Double"
+    Value: "1"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random seed"
+Layers:
+  1b95d42e901a45e79fcf6d53f18ed5de:
+    Name: ""
+    OsbLayer: Foreground
+    DiffSpecific: Yes
+    Visible: Yes

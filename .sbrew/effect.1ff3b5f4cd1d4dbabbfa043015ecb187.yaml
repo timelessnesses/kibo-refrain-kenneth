@@ -1,0 +1,26 @@
+﻿FormatVersion: 7
+Name: "Transitions 11"
+Script: "Transitions"
+Config:
+  Start:
+    Type: "System.Int32"
+    Value: "24230"
+  End:
+    Type: "System.Int32"
+    Value: "25625"
+  Color:
+    Type: "OpenTK.Graphics.Color4"
+    Value: "0.4117647,0.4117647,0.4117647,1"
+  Lines:
+    Type: "System.Int32"
+    Value: "10"
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "0"
+    DisplayName: "Random seed"
+Layers:
+  32542fc907fd4672bf56b72be48601ed:
+    Name: "Transitions"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
