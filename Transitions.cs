@@ -43,7 +43,6 @@ namespace StorybrewScripts
             var random = new Random();
             var randomed = easings[random.Next(easings.Count)];
             white.MoveY(randomed, Start, End, -500, 234);
-            white.Additive(Start, End);
             white.Fade(End, End + 500, 1, 0);
         }
     }
