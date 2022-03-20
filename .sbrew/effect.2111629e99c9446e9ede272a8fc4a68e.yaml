@@ -4,13 +4,13 @@ Script: "Background"
 Config:
   BackgroundPath:
     Type: "System.String"
-    Value: ""
+    Value: "sb/boobs.png"
   StartTime:
     Type: "System.Int32"
-    Value: "0"
+    Value: "-500"
   EndTime:
     Type: "System.Int32"
-    Value: "0"
+    Value: "227951"
   Opacity:
     Type: "System.Double"
     Value: "0.8"

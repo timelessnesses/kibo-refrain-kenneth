@@ -55,9 +55,10 @@
     <Compile Include="Background.cs" />
     <Compile Include="Credit.cs" />
     <Compile Include="FeatherFollow.cs" />
-    <Compile Include="GlowOverlay.cs" />
-    <Compile Include="LineOverlay.cs" />
+    <Compile Include="GlowTime.cs" />
+    <Compile Include="Kiai.cs" />
     <Compile Include="Particles.cs" />
+    <Compile Include="Spectrum.cs" />
     <Compile Include="Transitions.cs" />
     <Compile Include="Vig.cs" />
   </ItemGroup>

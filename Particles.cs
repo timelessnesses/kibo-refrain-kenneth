@@ -38,13 +38,14 @@ namespace StorybrewScripts
             for (var count = 0; count < particles_count; count++)
             {
                 var particle = layer.CreateSprite("sb/box_uwu.png", OsbOrigin.Centre);
-                particle.Scale(OsbEasing.None, StartTime, EndTime, Random(0.3, 0.9), Random(0.3, 0.9));
-                particle.Fade(OsbEasing.None, StartTime, EndTime + 500, 0.3, 1);
-                var posx = Random(-300, 760);
-                var posy = Random(600, 2000);
-                particle.Move(OsbEasing.None, StartTime, EndTime + Random(100, 5000), new Vector2(posx, posy), new Vector2(posx, -690));
+                particle.Scale(OsbEasing.None, StartTime, EndTime, Random(1, 2), Random(1, 2));
+                particle.Fade(OsbEasing.None, StartTime, EndTime + 500, 0.8, 1);
+                var posx = Random(-108, 760);
+                var posy = Random(550, 1500);
+                particle.Move(OsbEasing.None, StartTime, EndTime + Random(100, 2000), new Vector2(posx, posy), new Vector2(posx, -400));
                 var color = Random_Dict(colors);
                 particle.Color(StartTime, color);
+                particle.Additive(StartTime, EndTime);
             }
         }
         public Color4 Random_Dict(Dictionary<string, Color4> colors)

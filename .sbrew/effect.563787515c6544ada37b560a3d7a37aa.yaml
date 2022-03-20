@@ -1,17 +1,14 @@
 ﻿FormatVersion: 7
-Name: "Particles 1"
-Script: "Particles"
+Name: "Kiai 1"
+Script: "Kiai"
 Config:
-  particles_count:
-    Type: "System.Int32"
-    Value: "1000"
   RandomSeed:
     Type: "System.Int32"
     Value: "0"
     DisplayName: "Random seed"
 Layers:
-  4dd7ede1c83f413aa0da416914f8ff90:
-    Name: "subtitle"
+  716001a0b24840a5bfaf69b0404014ad:
+    Name: "kiai :dies:"
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

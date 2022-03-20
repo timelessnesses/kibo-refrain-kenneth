@@ -7,7 +7,7 @@ namespace StorybrewScripts
     public class Background : StoryboardObjectGenerator
     {
         [Configurable]
-        public string BackgroundPath = "";
+        public string BackgroundPath = "sb/boobs.png";
 
         [Configurable]
         public int StartTime = 0;
@@ -20,7 +20,6 @@ namespace StorybrewScripts
 
         public override void Generate()
         {
-            if (BackgroundPath == "") BackgroundPath = Beatmap.BackgroundPath ?? string.Empty;
             if (StartTime == EndTime) EndTime = (int)(Beatmap.HitObjects.LastOrDefault()?.EndTime ?? AudioDuration);
 
             var bitmap = GetMapsetBitmap(BackgroundPath);
@@ -48,12 +47,20 @@ namespace StorybrewScripts
             {
                 ScaleToBeat(time.Key, time.Value, bg);
             }
+            var times__ = new Dictionary<int, int>();
+
+            times__[59113] = 87020;
+            times__[109346] = 131672;
+            times__[188881] = 227951;
+            foreach (var time in times__)
+            {
+                bg.Fade(time.Key, time.Key, 0, 0);
+                bg.Fade(time.Value, time.Value, 1, 1);
+            }
         }
         public void FlashBang(int StartTime, OsbSprite bg)
         {
-            bg.Rotate(StartTime, StartTime, 0, 0);
-            bg.Rotate(OsbEasing.Out, StartTime, StartTime + 2000, 0.523598775, 0);
-            bg.Scale(StartTime, StartTime + (180509 - 180160), 0.5, 480.0f / GetMapsetBitmap(BackgroundPath).Height);
+            ;
         }
         public void ScaleToBeat(int time, int end, OsbSprite bg)
         {
