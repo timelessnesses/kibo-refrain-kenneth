@@ -42,7 +42,7 @@ namespace StorybrewScripts
                 particle.Fade(OsbEasing.None, StartTime, EndTime + 500, 0.8, 1);
                 var posx = Random(-108, 760);
                 var posy = Random(550, 1500);
-                particle.Move(OsbEasing.None, StartTime, EndTime + Random(100, 2000), new Vector2(posx, posy), new Vector2(posx, -400));
+                particle.Move(OsbEasing.None, StartTime, EndTime + Random(500, 3000), new Vector2(posx, posy), new Vector2(posx, -400));
                 var color = Random_Dict(colors);
                 particle.Color(StartTime, color);
                 particle.Additive(StartTime, EndTime);

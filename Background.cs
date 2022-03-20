@@ -16,7 +16,7 @@ namespace StorybrewScripts
         public int EndTime = 0;
 
         [Configurable]
-        public double Opacity = 0.2;
+        public double Opacity = 0.8;
 
         public override void Generate()
         {
@@ -24,8 +24,7 @@ namespace StorybrewScripts
 
             var bitmap = GetMapsetBitmap(BackgroundPath);
             var bg = GetLayer("").CreateSprite(BackgroundPath, OsbOrigin.Centre);
-            bg.Scale(StartTime, 480.0f / bitmap.Height);
-            bg.Fade(StartTime - 500, StartTime, 0, Opacity);
+            bg.Fade(OsbEasing.Out, StartTime, StartTime + 500, 0, Opacity);
             var times = new List<int>();
             times.Add(59113);
             times.Add(109346);

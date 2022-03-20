@@ -55,7 +55,7 @@ namespace StorybrewScripts
         [Configurable]
         public OsbEasing FftEasing = OsbEasing.InExpo;
 
-        public override void Generate()
+        public override async void Generate()
         {
             if (StartTime == EndTime)
             {
@@ -87,6 +87,7 @@ namespace StorybrewScripts
 
             var layer = GetLayer("Spectrum");
             var barWidth = Width / BarCount;
+            Color4? Last = null;
             for (var i = 0; i < BarCount; i++)
             {
                 var keyframes = heightKeyframes[i];
@@ -94,9 +95,30 @@ namespace StorybrewScripts
 
                 var bar = layer.CreateSprite(SpritePath, SpriteOrigin, new Vector2(Position.X + i * barWidth, Position.Y));
                 bar.CommandSplitThreshold = 300;
-                bar.Color(StartTime, new Color4(255, 73, 255, 1));
+                Color4[] colors = {
+                        Color4.AliceBlue,
+                        Color4.Pink,
+                        new Color4(9, 217, 253,1),
+
+                };
+                var color = Color_Random(colors);
+                for (int j = 0; j == -1; j++)
+                { // Forever loop :troll:
+                    if (color == Last)
+                    {
+                        color = Color_Random(colors);
+                    }
+                    else
+                    {
+                        Last = color;
+                        break;
+                    }
+
+
+                }
+                bar.Color(StartTime, color);
                 bar.Additive(StartTime, EndTime + 2000);
-                bar.Fade(EndTime, EndTime + (2000), 1, 0);
+                bar.Fade(EndTime, EndTime + (500), 1, 0);
 
                 var scaleX = Scale.X * barWidth / bitmap.Width;
                 scaleX = (float)Math.Floor(scaleX * 10) / 10.0f;
@@ -115,6 +137,12 @@ namespace StorybrewScripts
                 );
                 if (!hasScale) bar.ScaleVec(StartTime, scaleX, MinimalHeight);
             }
+        }
+        private Color4 Color_Random(Color4[] stuff)
+        {
+            Random random = new Random();
+            var random_element = stuff[random.Next(0, stuff.Length)];
+            return random_element;
         }
     }
 }

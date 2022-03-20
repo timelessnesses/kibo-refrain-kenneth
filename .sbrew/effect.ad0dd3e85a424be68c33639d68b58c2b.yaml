@@ -1,5 +1,5 @@
 ﻿FormatVersion: 7
-Name: "FeatherFollow 5"
+Name: "FeatherFollow 6"
 Script: "FeatherFollow"
 Config:
   StartTime:
@@ -25,7 +25,7 @@ Config:
     Value: "0"
     DisplayName: "Random seed"
 Layers:
-  bd05c91b972d4ac8a5450ce86391ae6b:
+  690ab33c5b7f402db4a9a589da7fc6b2:
     Name: ""
     OsbLayer: Foreground
     DiffSpecific: Yes
