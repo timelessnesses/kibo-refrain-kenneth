@@ -15,25 +15,83 @@ namespace StorybrewScripts
     {
         public override void Generate()
         {
-            string author = "";
-            if (author_name(Beatmap.ToString()) == "")
-            {
+            var layer = GetLayer("Credit");
+            var gd = layer.CreateSprite("sb/gds/" + author_name(Beatmap.ToString()) + ".png");
+            var an_idiot = layer.CreateSprite("sb/gds/an idiot.png");
+            var diff_by = layer.CreateSprite("sb/gds/Difficulty By_.png");
+            var set_by = layer.CreateSprite("sb/gds/Mapset By_.png");
+            var author = layer.CreateSprite("sb/gds/KennethBBG.png");
+            var haha_totally_not_sponsorship_smiley_face_here = layer.CreateSprite("sb/gds/Storyboard By_.png");
+            var hitsound_by = layer.CreateSprite("sb/gds/Hitsounded By_.png");
+            var no = layer.CreateSprite("sb/gds/boobs.png");
 
-                author = "KennethBBG"; //force
+            no.ScaleVec(-5000, new Vector2(0.5f, 0.5f));
+            no.Fade(-5000, -4000, 0, 1);
+            no.Move(OsbEasing.In, -5000, -4000, new Vector2(360, 180), new Vector2(340, 200));
+            no.Move(OsbEasing.Out, -4000, 0, new Vector2(340, 200), new Vector2(300, 230));
+            no.Fade(-1000, 0, 1, 0);
+            //this works
+            set_by.ScaleVec(-5000, new Vector2(0.5f, 0.5f));
+            set_by.Move(OsbEasing.In, -5000, -4500, new Vector2(80, 80), new Vector2(100, 90));
+            set_by.Fade(OsbEasing.In, -5000, -4500, 0, 1);
+            set_by.Move(OsbEasing.In, -4500, -4000, new Vector2(100, 90), new Vector2(130, 100));
+            set_by.Fade(OsbEasing.Out, -4200, -4000, 1, 0);
+            //this works
 
-            }
-            else
-            {
-                author = author_name(Beatmap.ToString());
-            }
+            author.ScaleVec(-5000, new Vector2(0.4f, 0.4f));
+            author.Move(OsbEasing.In, -5000, -4500, new Vector2(590, 330), new Vector2(580, 340));
+            author.Fade(OsbEasing.In, -5000, -4500, 0, 1);
+            author.Move(OsbEasing.In, -4500, -4000, new Vector2(580, 340), new Vector2(560, 350));
+            author.Fade(OsbEasing.Out, -4200, -4000, 1, 0);
+            //this works
 
-            var layer = GetLayer("Credits");
-            var box1 = layer.CreateSprite("sb/white.png");
-            var box2 = layer.CreateSprite("sb/white.png");
-            var white = layer.CreateSprite("sb/white.png");
-            box1.Color(OsbEasing.None, -500, 3299, new Color4(0, 0, 0, 0), new Color4(0, 0, 0, 0)); // black
-            box2.Color(OsbEasing.None, -500, 3299, new Color4(0, 0, 0, 0), new Color4(0, 0, 0, 0)); // black box (real)
+            // --------------------------------------------------------
 
+            diff_by.ScaleVec(-4000, new Vector2(0.4f, 0.4f));
+            diff_by.Move(OsbEasing.In, -4000, -3500, new Vector2(80, 80), new Vector2(100, 90));
+            diff_by.Fade(OsbEasing.In, -4000, -3500, 0, 1);
+            diff_by.Move(OsbEasing.In, -3500, -3000, new Vector2(100, 90), new Vector2(130, 100));
+            diff_by.Fade(OsbEasing.Out, -3200, -3000, 1, 0);
+            //this works
+
+            gd.ScaleVec(-4000, new Vector2(0.4f, 0.4f));
+            gd.Move(OsbEasing.In, -4000, -3500, new Vector2(590, 330), new Vector2(580, 340));
+            gd.Fade(OsbEasing.In, -4000, -3500, 0, 1);
+            gd.Move(OsbEasing.In, -3500, -3000, new Vector2(580, 340), new Vector2(560, 350));
+            gd.Fade(OsbEasing.Out, -3200, -3000, 1, 0);
+            // this works
+
+            // -----------------------------------------------------------------------------------
+
+            hitsound_by.ScaleVec(-3000, new Vector2(0.35f, 0.35f));
+            hitsound_by.Move(OsbEasing.In, -3000, -2500, new Vector2(80, 80), new Vector2(100, 90));
+            hitsound_by.Fade(OsbEasing.In, -3000, -2500, 0, 1);
+            hitsound_by.Move(OsbEasing.In, -2500, -2000, new Vector2(100, 90), new Vector2(130, 100));
+            hitsound_by.Fade(OsbEasing.Out, -2200, -2000, 1, 0);
+            //this works
+
+            gd.ScaleVec(-3000, new Vector2(0.4f, 0.4f));
+            gd.Move(OsbEasing.In, -3000, -2500, new Vector2(590, 330), new Vector2(580, 340));
+            gd.Fade(OsbEasing.In, -3000, -2500, 0, 1);
+            gd.Move(OsbEasing.In, -2500, -2000, new Vector2(580, 340), new Vector2(560, 350));
+            gd.Fade(OsbEasing.Out, -2200, -2000, 1, 0);
+            // this works
+
+            // -----------------------------------------------------------------------------------
+
+            haha_totally_not_sponsorship_smiley_face_here.ScaleVec(-2000, new Vector2(0.35f, 0.35f));
+            haha_totally_not_sponsorship_smiley_face_here.Move(OsbEasing.In, -2000, -1500, new Vector2(80, 80), new Vector2(100, 90));
+            haha_totally_not_sponsorship_smiley_face_here.Fade(OsbEasing.In, -2000, -1500, 0, 1);
+            haha_totally_not_sponsorship_smiley_face_here.Move(OsbEasing.In, -1500, -1000, new Vector2(100, 90), new Vector2(130, 100));
+            haha_totally_not_sponsorship_smiley_face_here.Fade(OsbEasing.Out, -1200, -1000, 1, 0);
+            //this works
+
+            an_idiot.ScaleVec(-2000, new Vector2(0.4f, 0.4f));
+            an_idiot.Move(OsbEasing.In, -2000, -1500, new Vector2(590, 330), new Vector2(580, 340));
+            an_idiot.Fade(OsbEasing.In, -2000, -1500, 0, 1);
+            an_idiot.Move(OsbEasing.In, -1500, -1000, new Vector2(580, 340), new Vector2(560, 350));
+            an_idiot.Fade(OsbEasing.Out, -1200, -1000, 1, 0);
+            // this works
         }
 
         public string author_name(string difficulty_name)

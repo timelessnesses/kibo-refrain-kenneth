@@ -7,8 +7,8 @@ Config:
     Value: "0"
     DisplayName: "Random seed"
 Layers:
-  41a99890a8384638b69073153f9d562b:
-    Name: "Credits"
+  f292e02e5ce84b9a88d33959d8d55267:
+    Name: "Credit"
     OsbLayer: Background
     DiffSpecific: No
     Visible: Yes

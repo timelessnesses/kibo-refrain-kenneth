@@ -9,6 +9,6 @@ Config:
 Layers:
   30805023856f47b293d7ba02b3b5d60a:
     Name: "Vig"
-    OsbLayer: Background
+    OsbLayer: Foreground
     DiffSpecific: No
     Visible: Yes

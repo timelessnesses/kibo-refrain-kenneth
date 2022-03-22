@@ -38,6 +38,7 @@ namespace StorybrewScripts
                 hSprite.Fade(OsbEasing.In, hitobject.EndTime, hitobject.EndTime + FadeDuration, 1, 0);
                 hSprite.Additive(hitobject.StartTime, hitobject.EndTime + FadeDuration);
                 hSprite.Color(hitobject.StartTime, hitobject.Color);
+                hSprite.Scale(OsbEasing.In, hitobject.StartTime, hitobject.StartTime, SpriteScale, SpriteScale);
 
                 if (hitobject is OsuSlider)
                 {

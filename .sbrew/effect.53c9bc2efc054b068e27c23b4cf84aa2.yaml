@@ -19,7 +19,7 @@ Config:
     Value: "sb/glow_circle.png"
   SpriteScale:
     Type: "System.Double"
-    Value: "1"
+    Value: "0.6"
   RandomSeed:
     Type: "System.Int32"
     Value: "0"

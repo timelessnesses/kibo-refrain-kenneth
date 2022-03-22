@@ -27,7 +27,7 @@ namespace StorybrewScripts
                 Generates(time.Key, time.Value);
             }
         }
-        public void Generates(int StartTime, int EndTime)
+        public void Generates(int StartTime, int EndTime) // TODO: need to uh make particle until its end so it would looks cool :D
         {
             var layer = GetLayer("subtitle");
             StartTime -= 1000;
@@ -35,6 +35,8 @@ namespace StorybrewScripts
             var colors = new Dictionary<string, Color4>();
             colors["Cyan"] = Color4.Cyan;
             colors["Pink"] = Color4.Pink;
+            colors["White"] = Color4.White;
+            colors["Blue"] = Color4.Blue;
             for (var count = 0; count < particles_count; count++)
             {
                 var particle = layer.CreateSprite("sb/box_uwu.png", OsbOrigin.Centre);

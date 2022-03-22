@@ -22,9 +22,12 @@ namespace StorybrewScripts
         {
             if (StartTime == EndTime) EndTime = (int)(Beatmap.HitObjects.LastOrDefault()?.EndTime ?? AudioDuration);
 
+            Log(StartTime);
+            Log(EndTime);
+
             var bitmap = GetMapsetBitmap(BackgroundPath);
             var bg = GetLayer("").CreateSprite(BackgroundPath, OsbOrigin.Centre);
-            bg.Fade(OsbEasing.Out, StartTime, StartTime + 500, 0, Opacity);
+            bg.Fade(OsbEasing.None, StartTime, StartTime + 500, 0, Opacity); // Instant
             var times = new List<int>();
             times.Add(59113);
             times.Add(109346);
@@ -35,7 +38,6 @@ namespace StorybrewScripts
             {
                 FlashBang(time, bg);
             }
-            bg.Fade(227951, 0);
             var times_ = new Dictionary<int, int>();
             times_[25625] = 36788;
             times_[59113] = 87020;

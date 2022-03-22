@@ -55,7 +55,7 @@ namespace StorybrewScripts
         [Configurable]
         public OsbEasing FftEasing = OsbEasing.InExpo;
 
-        public override async void Generate()
+        public override void Generate()
         {
             if (StartTime == EndTime)
             {
@@ -102,7 +102,7 @@ namespace StorybrewScripts
 
                 };
                 var color = Color_Random(colors);
-                for (int j = 0; j == -1; j++)
+                while (true)
                 { // Forever loop :troll:
                     if (color == Last)
                     {
@@ -119,6 +119,7 @@ namespace StorybrewScripts
                 bar.Color(StartTime, color);
                 bar.Additive(StartTime, EndTime + 2000);
                 bar.Fade(EndTime, EndTime + (500), 1, 0);
+                bar.Fade(StartTime, 0.6);
 
                 var scaleX = Scale.X * barWidth / bitmap.Width;
                 scaleX = (float)Math.Floor(scaleX * 10) / 10.0f;
