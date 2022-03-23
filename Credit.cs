@@ -41,7 +41,7 @@ namespace StorybrewScripts
             author.ScaleVec(0, new Vector2(0.4f, 0.4f));
             author.Move(OsbEasing.In, 0, 1000, new Vector2(590, 330), new Vector2(580, 340));
             author.Fade(OsbEasing.In, 0, 1000, 0, 1);
-            author.Move(OsbEasing.In, 1000, 6250, new Vector2(580, 340), new Vector2(560, 350));
+            author.Move(OsbEasing.In, 1000, 6250, new Vector2(580, 340), new Vector2(570, 350));
             author.Fade(OsbEasing.Out, 5250, 6250, 1, 0);
             //this works
 
@@ -50,47 +50,47 @@ namespace StorybrewScripts
             diff_by.ScaleVec(6250, new Vector2(0.4f, 0.4f));
             diff_by.Move(OsbEasing.In, 6250, 7250, new Vector2(80, 80), new Vector2(100, 90));
             diff_by.Fade(OsbEasing.In, 6250, 7250, 0, 1);
-            diff_by.Move(OsbEasing.In, 7250, 12500, new Vector2(100, 90), new Vector2(130, 100));
-            diff_by.Fade(OsbEasing.Out, 12400, 12500, 1, 0);
+            diff_by.Move(OsbEasing.In, 7250, 12500, new Vector2(100, 90), new Vector2(110, 100));
+            diff_by.Fade(OsbEasing.Out, 11500, 12500, 1, 0);
             //this works
 
             gd.ScaleVec(6250, new Vector2(0.4f, 0.4f));
             gd.Move(OsbEasing.In, 6250, 7250, new Vector2(590, 330), new Vector2(580, 340));
             gd.Fade(OsbEasing.In, 6250, 7250, 0, 1);
-            gd.Move(OsbEasing.In, 7250, 12500, new Vector2(580, 340), new Vector2(560, 350));
-            gd.Fade(OsbEasing.Out, 12400, 12500, 1, 0);
+            gd.Move(OsbEasing.In, 7250, 12500, new Vector2(580, 340), new Vector2(570, 350));
+            gd.Fade(OsbEasing.Out, 11500, 12500, 1, 0);
             // this works
 
             // -----------------------------------------------------------------------------------
 
             hitsound_by.ScaleVec(12500, new Vector2(0.35f, 0.35f));
-            hitsound_by.Move(OsbEasing.In, 12500, 12600, new Vector2(80, 80), new Vector2(100, 90));
-            hitsound_by.Fade(OsbEasing.In, 12500, 12600, 0, 1);
-            hitsound_by.Move(OsbEasing.In, 12600, 18750, new Vector2(100, 90), new Vector2(130, 100));
-            hitsound_by.Fade(OsbEasing.Out, 18650, 18750, 1, 0);
+            hitsound_by.Move(OsbEasing.In, 12500, 13500, new Vector2(80, 80), new Vector2(90, 90));
+            hitsound_by.Fade(OsbEasing.In, 12500, 13500, 0, 1);
+            hitsound_by.Move(OsbEasing.In, 13600, 18750, new Vector2(90, 90), new Vector2(100, 100));
+            hitsound_by.Fade(OsbEasing.Out, 17750, 18750, 1, 0);
             //this works
 
-            author.ScaleVec(18750, new Vector2(0.4f, 0.4f));
-            author.Move(OsbEasing.In, 18750, 18850, new Vector2(590, 330), new Vector2(580, 340));
-            author.Fade(OsbEasing.In, 18750, 18850, 0, 1);
-            author.Move(OsbEasing.In, 18850, 25000, new Vector2(580, 340), new Vector2(560, 350));
-            author.Fade(OsbEasing.Out, 24900, 25000, 1, 0);
+            author.ScaleVec(12500, new Vector2(0.4f, 0.4f));
+            author.Move(OsbEasing.In, 12500, 13500, new Vector2(590, 330), new Vector2(580, 340));
+            author.Fade(OsbEasing.In, 12500, 13500, 0, 1);
+            author.Move(OsbEasing.In, 13600, 18750, new Vector2(580, 340), new Vector2(570, 350));
+            author.Fade(OsbEasing.Out, 17750, 18750, 1, 0);
             // this works
 
             // -----------------------------------------------------------------------------------
 
-            haha_totally_not_sponsorship_smiley_face_here.ScaleVec(-2000, new Vector2(0.35f, 0.35f));
-            haha_totally_not_sponsorship_smiley_face_here.Move(OsbEasing.In, -2000, -1500, new Vector2(80, 80), new Vector2(100, 90));
-            haha_totally_not_sponsorship_smiley_face_here.Fade(OsbEasing.In, -2000, -1500, 0, 1);
-            haha_totally_not_sponsorship_smiley_face_here.Move(OsbEasing.In, -1500, -1000, new Vector2(100, 90), new Vector2(130, 100));
-            haha_totally_not_sponsorship_smiley_face_here.Fade(OsbEasing.Out, -1200, -1000, 1, 0);
+            haha_totally_not_sponsorship_smiley_face_here.ScaleVec(18750, new Vector2(0.35f, 0.35f));
+            haha_totally_not_sponsorship_smiley_face_here.Move(OsbEasing.In, 18750, 19750, new Vector2(80, 80), new Vector2(90, 90));
+            haha_totally_not_sponsorship_smiley_face_here.Fade(OsbEasing.In, 18750, 19750, 0, 1);
+            haha_totally_not_sponsorship_smiley_face_here.Move(OsbEasing.In, 19750, 25625, new Vector2(90, 90), new Vector2(100, 100));
+            haha_totally_not_sponsorship_smiley_face_here.Fade(OsbEasing.Out, 24625, 25625, 1, 0);
             //this works
 
             an_idiot.ScaleVec(-2000, new Vector2(0.4f, 0.4f));
-            an_idiot.Move(OsbEasing.In, -2000, -1500, new Vector2(590, 330), new Vector2(580, 340));
-            an_idiot.Fade(OsbEasing.In, -2000, -1500, 0, 1);
-            an_idiot.Move(OsbEasing.In, -1500, -1000, new Vector2(580, 340), new Vector2(560, 350));
-            an_idiot.Fade(OsbEasing.Out, -1200, -1000, 1, 0);
+            an_idiot.Move(OsbEasing.In, 18750, 19750, new Vector2(590, 330), new Vector2(580, 340));
+            an_idiot.Fade(OsbEasing.In, 18750, 19750, 0, 1);
+            an_idiot.Move(OsbEasing.In, 19750, 25625, new Vector2(580, 340), new Vector2(570, 350));
+            an_idiot.Fade(OsbEasing.Out, 24625, 25625, 1, 0);
             // this works
         }
 
