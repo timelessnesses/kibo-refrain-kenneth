@@ -25,56 +25,56 @@ namespace StorybrewScripts
             var hitsound_by = layer.CreateSprite("sb/gds/Hitsounded By_.png");
             var no = layer.CreateSprite("sb/gds/boobs.png");
 
-            no.ScaleVec(-5000, new Vector2(0.5f, 0.5f));
-            no.Fade(-5000, -4000, 0, 1);
-            no.Move(OsbEasing.In, -5000, -4000, new Vector2(360, 180), new Vector2(340, 200));
-            no.Move(OsbEasing.Out, -4000, 0, new Vector2(340, 200), new Vector2(300, 230));
-            no.Fade(-1000, 0, 1, 0);
+            no.ScaleVec(0, new Vector2(0.5f, 0.5f));
+            no.Fade(0, 1000, 0, 1);
+            no.Move(OsbEasing.In, 0, 1000, new Vector2(360, 180), new Vector2(340, 200));
+            no.Move(OsbEasing.Out, 1000, 25625, new Vector2(340, 200), new Vector2(300, 230));
+            no.Fade(25600, 25625, 1, 0);
             //this works
-            set_by.ScaleVec(-5000, new Vector2(0.5f, 0.5f));
-            set_by.Move(OsbEasing.In, -5000, -4500, new Vector2(80, 80), new Vector2(100, 90));
-            set_by.Fade(OsbEasing.In, -5000, -4500, 0, 1);
-            set_by.Move(OsbEasing.In, -4500, -4000, new Vector2(100, 90), new Vector2(130, 100));
-            set_by.Fade(OsbEasing.Out, -4200, -4000, 1, 0);
+            set_by.ScaleVec(0, new Vector2(0.5f, 0.5f));
+            set_by.Move(OsbEasing.In, 0, 1000, new Vector2(80, 80), new Vector2(100, 90));
+            set_by.Fade(OsbEasing.In, 0, 1000, 0, 1);
+            set_by.Move(OsbEasing.In, 1000, 6250, new Vector2(100, 90), new Vector2(110, 100));
+            set_by.Fade(OsbEasing.Out, 5250, 6250, 1, 0);
             //this works
 
-            author.ScaleVec(-5000, new Vector2(0.4f, 0.4f));
-            author.Move(OsbEasing.In, -5000, -4500, new Vector2(590, 330), new Vector2(580, 340));
-            author.Fade(OsbEasing.In, -5000, -4500, 0, 1);
-            author.Move(OsbEasing.In, -4500, -4000, new Vector2(580, 340), new Vector2(560, 350));
-            author.Fade(OsbEasing.Out, -4200, -4000, 1, 0);
+            author.ScaleVec(0, new Vector2(0.4f, 0.4f));
+            author.Move(OsbEasing.In, 0, 1000, new Vector2(590, 330), new Vector2(580, 340));
+            author.Fade(OsbEasing.In, 0, 1000, 0, 1);
+            author.Move(OsbEasing.In, 1000, 6250, new Vector2(580, 340), new Vector2(560, 350));
+            author.Fade(OsbEasing.Out, 5250, 6250, 1, 0);
             //this works
 
             // --------------------------------------------------------
 
-            diff_by.ScaleVec(-4000, new Vector2(0.4f, 0.4f));
-            diff_by.Move(OsbEasing.In, -4000, -3500, new Vector2(80, 80), new Vector2(100, 90));
-            diff_by.Fade(OsbEasing.In, -4000, -3500, 0, 1);
-            diff_by.Move(OsbEasing.In, -3500, -3000, new Vector2(100, 90), new Vector2(130, 100));
-            diff_by.Fade(OsbEasing.Out, -3200, -3000, 1, 0);
+            diff_by.ScaleVec(6250, new Vector2(0.4f, 0.4f));
+            diff_by.Move(OsbEasing.In, 6250, 7250, new Vector2(80, 80), new Vector2(100, 90));
+            diff_by.Fade(OsbEasing.In, 6250, 7250, 0, 1);
+            diff_by.Move(OsbEasing.In, 7250, 12500, new Vector2(100, 90), new Vector2(130, 100));
+            diff_by.Fade(OsbEasing.Out, 12400, 12500, 1, 0);
             //this works
 
-            gd.ScaleVec(-4000, new Vector2(0.4f, 0.4f));
-            gd.Move(OsbEasing.In, -4000, -3500, new Vector2(590, 330), new Vector2(580, 340));
-            gd.Fade(OsbEasing.In, -4000, -3500, 0, 1);
-            gd.Move(OsbEasing.In, -3500, -3000, new Vector2(580, 340), new Vector2(560, 350));
-            gd.Fade(OsbEasing.Out, -3200, -3000, 1, 0);
+            gd.ScaleVec(6250, new Vector2(0.4f, 0.4f));
+            gd.Move(OsbEasing.In, 6250, 7250, new Vector2(590, 330), new Vector2(580, 340));
+            gd.Fade(OsbEasing.In, 6250, 7250, 0, 1);
+            gd.Move(OsbEasing.In, 7250, 12500, new Vector2(580, 340), new Vector2(560, 350));
+            gd.Fade(OsbEasing.Out, 12400, 12500, 1, 0);
             // this works
 
             // -----------------------------------------------------------------------------------
 
-            hitsound_by.ScaleVec(-3000, new Vector2(0.35f, 0.35f));
-            hitsound_by.Move(OsbEasing.In, -3000, -2500, new Vector2(80, 80), new Vector2(100, 90));
-            hitsound_by.Fade(OsbEasing.In, -3000, -2500, 0, 1);
-            hitsound_by.Move(OsbEasing.In, -2500, -2000, new Vector2(100, 90), new Vector2(130, 100));
-            hitsound_by.Fade(OsbEasing.Out, -2200, -2000, 1, 0);
+            hitsound_by.ScaleVec(12500, new Vector2(0.35f, 0.35f));
+            hitsound_by.Move(OsbEasing.In, 12500, 12600, new Vector2(80, 80), new Vector2(100, 90));
+            hitsound_by.Fade(OsbEasing.In, 12500, 12600, 0, 1);
+            hitsound_by.Move(OsbEasing.In, 12600, 18750, new Vector2(100, 90), new Vector2(130, 100));
+            hitsound_by.Fade(OsbEasing.Out, 18650, 18750, 1, 0);
             //this works
 
-            gd.ScaleVec(-3000, new Vector2(0.4f, 0.4f));
-            gd.Move(OsbEasing.In, -3000, -2500, new Vector2(590, 330), new Vector2(580, 340));
-            gd.Fade(OsbEasing.In, -3000, -2500, 0, 1);
-            gd.Move(OsbEasing.In, -2500, -2000, new Vector2(580, 340), new Vector2(560, 350));
-            gd.Fade(OsbEasing.Out, -2200, -2000, 1, 0);
+            author.ScaleVec(18750, new Vector2(0.4f, 0.4f));
+            author.Move(OsbEasing.In, 18750, 18850, new Vector2(590, 330), new Vector2(580, 340));
+            author.Fade(OsbEasing.In, 18750, 18850, 0, 1);
+            author.Move(OsbEasing.In, 18850, 25000, new Vector2(580, 340), new Vector2(560, 350));
+            author.Fade(OsbEasing.Out, 24900, 25000, 1, 0);
             // this works
 
             // -----------------------------------------------------------------------------------
