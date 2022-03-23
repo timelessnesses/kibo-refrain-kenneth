@@ -27,6 +27,7 @@ namespace StorybrewScripts
                     continue; // white space or smth
                 }
                 var glow = GetLayer("").CreateSprite("sb/glow.png");
+                var bitmap = GetMapsetBitmap("sb/glow.png");
                 OsuHitObject hitobject = null;
                 foreach (var hitobject_ in Beatmap.HitObjects)
                 {
@@ -36,6 +37,7 @@ namespace StorybrewScripts
                         break;
                     }
                 }
+                glow.Scale(time, 480.0f / bitmap.Height);
                 if (hitobject != null)
                 {
                     glow.Color(OsbEasing.None, time, time, hitobject.Color, hitobject.Color);
