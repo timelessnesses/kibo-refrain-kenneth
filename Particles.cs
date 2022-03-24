@@ -21,7 +21,7 @@ namespace StorybrewScripts
             var times = new Dictionary<int, int>();
             times[59113] = 87020;
             times[109346] = 131672;
-            times[188881] = 228648;
+            times[188881] = 227951;
             foreach (var time in times)
             {
                 Generates(time.Key, time.Value);
@@ -30,8 +30,9 @@ namespace StorybrewScripts
         public void Generates(int StartTime, int EndTime) // TODO: need to uh make particle until its end so it would looks cool :D
         {
             var layer = GetLayer("subtitle");
+            var EndTime_Real = EndTime;
             StartTime -= 1000;
-            EndTime += 8000;
+            EndTime += 4000;
             var colors = new Dictionary<string, Color4>();
             colors["Cyan"] = Color4.Cyan;
             colors["Pink"] = Color4.Pink;
@@ -41,14 +42,15 @@ namespace StorybrewScripts
             // or should i
             {
                 var particle = layer.CreateSprite("sb/box_uwu.png", OsbOrigin.Centre);
-                particle.Scale(OsbEasing.None, StartTime, EndTime, Random(1, 2), Random(1, 2));
-                particle.Fade(OsbEasing.None, StartTime, EndTime + 500, 0.8, 1);
+                particle.Scale(OsbEasing.None, StartTime, EndTime_Real, Random(1, 2), Random(1, 2));
+                particle.Fade(OsbEasing.None, StartTime, EndTime_Real, 0.5, 1);
                 var posx = Random(-108, 760);
-                var posy = Random(550, 1500);
-                particle.Move(OsbEasing.None, StartTime, EndTime + Random(500, 3000), new Vector2(posx, posy), new Vector2(posx, Random(-800, -400)));
+                var posy = Random(490, 1300);
+                particle.Move(OsbEasing.None, StartTime, EndTime + Random(1000, 2000), new Vector2(posx, posy), new Vector2(posx, Random(-800, -20)));
                 var color = Random_Dict(colors);
                 particle.Color(StartTime, color);
                 particle.Additive(StartTime, EndTime);
+                particle.Fade(EndTime_Real, 0);
             }
         }
         public Color4 Random_Dict(Dictionary<string, Color4> colors)
